@@ -28,24 +28,56 @@ body {
 }
 
 .waveWrapper .intro {
-	width: max-content;
+	width: 650px;
 	color: white;
 	margin: auto;
 	position: relative;
-	text-align: center;
 	top: 30%;
+	vertical-align: middle;
+}
+
+.waveWrapper .intro .textWrapper {
+	width: 400px;
+	float: right;
+}
+
+.waveWrapper .intro .textWrapper .typeWrapper {
+	width: max-content;
+	height: max-content;
+	
+}
+
+.waveWrapper .intro .textWrapper .typeWrapper .typewriter {
 	font-size: 30pt;
 	font-family: "Arial Black", Gadget, sans-serif;
+	margin:10px;
+	margin-left: 0px;
 }
+
+.waveWrapper .intro .textWrapper  .introduction {
+	margin: 10px;
+	margin-left: 0px;
+	font-size: 20pt;
+}
+
+.waveWrapper .intro .textWrapper  p {
+	margin: 5px;
+}
+
+
+.waveWrapper .intro img {
+	width: 200px;
+	float: left;
+}
+
 
 .waveWrapper .intro .typewriter {
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
   	border-right: .15em solid white; /* The typwriter cursor */
   	white-space: nowrap; /* Keeps the content on a single line */
-  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   	letter-spacing: .01em; /* Adjust as needed */
   	animation: 
-    typing 2.7s steps(40, end),
+    typing 1.7s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -67,7 +99,7 @@ body {
     bottom: -1px;
 }
 .bgTop {
-    z-index: 10;
+    z-index: 15;
     opacity: 0.5;
 }
 .bgMiddle {
@@ -75,7 +107,7 @@ body {
     opacity: 0.75;
 }
 .bgBottom {
-    z-index: 10;
+    z-index: 5;
 }
 .wave {
     position: absolute;
@@ -96,7 +128,7 @@ body {
     background-size: 50% 120px;
 }
 .waveAnimation .waveMiddle {
-    animation: move_wave 20s linear infinite;
+    animation: move_wave 10s linear infinite;
 }
 .waveBottom {
     background-size: 50% 100px;
