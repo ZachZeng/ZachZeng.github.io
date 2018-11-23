@@ -38,7 +38,7 @@
 				controls.update();
 
 				scene = new THREE.Scene();
-				scene.background = new THREE.Color("rgb(0,0,0)");
+				scene.background = new THREE.Color( 0xbfe3dd );
 				scene.add( new THREE.AmbientLight( 0x404040 ) );
 				pointLight = new THREE.PointLight( 0xffffff, 1 );
 				pointLight.position.copy( camera.position );
@@ -46,11 +46,15 @@
 				// model
 				var loader = new THREE.GLTFLoader();
 				loader.load( 'models/Model.gltf', function ( gltf ) {
-
-					scene.add( gltf.scene );
+					var model = gltf.scene;
+					model.position.set( 1, 1, 0 );
+					model.scale.set( 0.01, 0.01, 0.01 );
+					scene.add( model );
 				}, undefined, function ( e ) {
 					console.error( e );
 				} );
+
+
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
