@@ -36,9 +36,9 @@
 				controls = new THREE.OrbitControls( camera );
 				controls.target.set( 0, - 0.2, - 0.2 );
 				controls.update();
-				
+
 				scene = new THREE.Scene();
-				scene.background = THREE.Color( 0xff0000 );;
+				scene.background = new THREE.Color( 0xff0000 );;
 				light = new THREE.HemisphereLight( 0xbbbbff, 0x444422 );
 				light.position.set( 0, 1, 0 );
 				scene.add( light );
