@@ -36,16 +36,9 @@
 				controls = new THREE.OrbitControls( camera );
 				controls.target.set( 0, - 0.2, - 0.2 );
 				controls.update();
-				// envmap
-				var path = 'textures/cube/Bridge2/';
-				var format = '.jpg';
-				var envMap = new THREE.CubeTextureLoader().load( [
-					path + 'posx' + format, path + 'negx' + format,
-					path + 'posy' + format, path + 'negy' + format,
-					path + 'posz' + format, path + 'negz' + format
-				] );
+				
 				scene = new THREE.Scene();
-				scene.background = envMap;
+				scene.background = THREE.Color( 0xff0000 );;
 				light = new THREE.HemisphereLight( 0xbbbbff, 0x444422 );
 				light.position.set( 0, 1, 0 );
 				scene.add( light );
