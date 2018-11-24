@@ -59,7 +59,7 @@
 				// model
 				var loader = new THREE.GLTFLoader();
 				loader.setDRACOLoader( new THREE.DRACOLoader() );
-				loader.load( 'models/Model.gltf', function ( gltf ) {
+				loader.load( 'models/SimpleSkinning.gltf', function ( gltf ) {
 					var model = gltf.scene;
 					model.position.set( 1, 1, 0 );
 					model.traverse( function ( child ) {
