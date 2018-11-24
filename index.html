@@ -54,15 +54,12 @@
 					path + 'posz' + format, path + 'negz' + format
 				] );
 
-				THREE.DRACOLoader.setDecoderPath( 'js/libs/draco/gltf/' );
 
 				// model
 				var loader = new THREE.GLTFLoader();
-				loader.setDRACOLoader( new THREE.DRACOLoader() );
-				loader.load( 'models/Model.glb', function ( gltf ) {
+				loader.load( 'models/scene.glb', function ( gltf ) {
 					var model = gltf.scene;
 					model.position.set( 1, 1, 0 );
-					model.scale.set(100,100,100);
 					model.traverse( function ( child ) {
 					if ( child.isMesh ) child.material.envMap = envMap;
 				} );
