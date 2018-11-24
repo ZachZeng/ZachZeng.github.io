@@ -61,7 +61,7 @@
 				loader.load( 'models/zmodel.glb', function ( gltf ) {
 					var model = gltf.scene;
 					model.position.set( 0, 0, 0 );
-					model.scale.set(0.1,0.1,0.1);
+					model.scale.set(0.001,0.001,0.001);
 					model.traverse( function ( child ) {
 					if ( child.isMesh ) child.material.envMap = envMap;
 				} );
