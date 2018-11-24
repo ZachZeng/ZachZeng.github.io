@@ -58,7 +58,7 @@
 
 				// model
 				var loader = new THREE.GLTFLoader();
-				loader.load( 'models/scene.glb', function ( gltf ) {
+				loader.load( 'models/z_model.glb', function ( gltf ) {
 					var model = gltf.scene;
 					model.position.set( 0, 0, 0 );
 					model.traverse( function ( child ) {
