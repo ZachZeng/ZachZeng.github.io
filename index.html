@@ -5,95 +5,28 @@
 	<link rel="stylesheet" href="css/index_style.css">
 </head>
 <body>
-	<div id = "container">
-
+	<div class="navigation">
+		<p>WORK</p>
+	</div>
+	<div class="header">
+		
+	</div>
+	<div class="waveWrapper waveAnimation">
+		<div class="waveWrapperInner bgTop">
+    		<div class="wave waveTop" style="background-image: url('img/wave1.png')"></div>
+  		</div>
+  		<div class="waveWrapperInner bgMiddle">
+    		<div class="wave waveMiddle" style="background-image: url('img/wave2.png')"></div>
+  		</div>
+  		<div class="waveWrapperInner bgBottom">
+    		<div class="wave waveBottom" style="background-image: url('img/wave3.png')"></div>
+  		</div>
+	</div>
+	<div class="content">
+		
 	</div>
 
 
 	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-
-	<script src="js/three.js"></script>
-
-	<script src="js/controls/OrbitControls.js"></script>
-	<script src="js/loaders/GLTFLoader.js"></script>
-	<script src="js/loaders/DRACOLoader.js"></script>
-
-	<script src="js/WebGL.js"></script>
-	<script src="js/libs/stats.min.js"></script>
-
-	<script>
-			if ( WEBGL.isWebGLAvailable() === false ) {
-				document.body.appendChild( WEBGL.getWebGLErrorMessage() );
-			}
-			var stats, controls;
-			var camera, scene, renderer, light;
-			init();
-			animate();
-			function init() {
-				var container = document.getElementById( 'container' );
-				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.25, 5000 );
-				camera.position.set( -1, 0.5, 1);
-				camera.lookAt(new THREE.Vector3(0,0,0));
-				controls = new THREE.OrbitControls( camera );
-				controls.target.set( 0, - 0.2, - 0.2 );
-				controls.update();
-
-				scene = new THREE.Scene();
-				scene.background = new THREE.Color( 0xbfe3dd );
-				scene.add( new THREE.AmbientLight( 0x404040 ) );
-				pointLight = new THREE.PointLight( 0xffffff, 1 );
-				pointLight.position.copy( camera.position );
-				scene.add( pointLight );
-
-				// envmap
-				var path = 'textures/cube/Park2/';
-				var format = '.jpg';
-				var envMap = new THREE.CubeTextureLoader().load( [
-					path + 'posx' + format, path + 'negx' + format,
-					path + 'posy' + format, path + 'negy' + format,
-					path + 'posz' + format, path + 'negz' + format
-				] );
-
-
-				// model
-				var loader = new THREE.GLTFLoader();
-				loader.load( 'models/zmodel.glb', function ( gltf ) {
-					var model = gltf.scene;
-					model.position.set( 0, 0, 0 );
-					model.scale.set(0.001,0.001,0.001);
-					model.traverse( function ( child ) {
-					if ( child.isMesh ) child.material.envMap = envMap;
-				} );
-					scene.add( model );
-				}, undefined, function ( e ) {
-					console.error( e );
-				} );
-
-
-				renderer = new THREE.WebGLRenderer( { antialias: true } );
-				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
-				renderer.gammaOutput = true;
-				renderer.gammaFactor = 2.2;
-				container.appendChild( renderer.domElement );
-				window.addEventListener( 'resize', onWindowResize, false );
-				// stats
-				stats = new Stats();
-				container.appendChild( stats.dom );
-			}
-			function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
-			}
-			//
-			function animate() {
-				requestAnimationFrame( animate );
-				renderer.render( scene, camera );
-				stats.update();
-			}
-		</script>
-
 </body>
 </html>
