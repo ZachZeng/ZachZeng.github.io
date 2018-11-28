@@ -34,6 +34,7 @@ body {
 .navigation .left_navi {
     float: left;
     padding-left: 100px;
+    padding-top: 10px;
 }
 
 .navigation img{
@@ -47,6 +48,7 @@ body {
 .navigation .right_navi {
     float: right;
     padding-right: 100px;
+    padding-top: 10px;
 }
 
 .navigation li a {
@@ -58,7 +60,17 @@ body {
 
 
 .header {
-    height: 500px;
+    padding-top: 60px;
+    height: 250px;
+    text-align: center;
+}
+
+.header .hi {
+    color: #878787;
+    font-size: 30pt;
+    font-weight: lighter;
+    padding: 0px;
+    margin: 10px;
 }
 
 .waveWrapper {
