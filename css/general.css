@@ -15,6 +15,31 @@
     src: url('../font/Anodina-ExtraBold.otf');
 }
 
+.sidebar {
+	display: none;
+	text-align: left;
+	font-family: "Anodina_regular";
+}
+
+.openbtn {
+	position: fixed;
+	top: 3%;
+	z-index: 2;
+	border:none;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0);
+	padding: 10px 30px;
+	border: none;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.openbtn img {
+	width: 30px;
+	height: auto;
+	opacity: 0.9;
+}
+
 .navigation {
     position: relative;
     padding: 30px;

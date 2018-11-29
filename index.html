@@ -4,10 +4,11 @@
 	<title>GO BLUE</title>
 	<link rel="stylesheet" href="css/index_style.css">
 	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="icon" href="img/Icon_small.png">
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="main">
 		<div class="navigation">
 	  		<a class="left_navi" href="index.html" style="margin-left: 100px">WORK</a>
 	  		<a class="left_navi">RANDOM</a>
@@ -16,6 +17,14 @@
 	  		<a class="right_navi" href="about.html">ABOUT</a>
 		</div>
 		<div class="header">
+			<div id="mySidebar" class="sidebar">
+	  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  			<a href="index.html">WORK</a>
+	 			<a href="#">RANDOM</a>
+	  			<a href="about.html">ABOUT</a>
+	  			<a href="#">RESUME</a>
+			</div>
+			<button class="openbtn" onclick="openNav()"><img src="img/menu-button.png"></button> 
 			<p class="hi"> Hi, I am Yizhou Zeng! </p>
 			<p>Experience Design | Web Design | Visual Design | Front-end Develop</p>
 		</div>
@@ -43,5 +52,6 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
 </body>
 </html>

@@ -11,12 +11,18 @@ body {
 
 
 .header {
-    width: 800px;
-    margin: auto;
+    width: 100%;
     margin-top: 100px;
     vertical-align: middle;
-    height: 400px;
+    height: 100%;
     position: relative;
+    margin-bottom: 300px;
+}
+
+.intro_container {
+    width: 800px;
+    height: 400px;
+    margin: auto;
 }
 
 .header .char{
@@ -38,7 +44,8 @@ body {
 .header .about_intro {
     padding-left:300px;
     position: absolute;
-    top: 10%;
+    top: 3%;
+    line-height: 1.8em;
 }
 
 .header .about_intro .about_header {
