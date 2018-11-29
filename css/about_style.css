@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "Anodina";
+    font-weight: lighter;
+    src: url('font/Anodina-ExtraLight.otf');
+}
+@font-face {
+    font-family: "Anodina";
+    font-weight: initial;
+    src: url('font/Anodina-Regular.otf');
+}
+@font-face {
+    font-family: "Anodina";
+    font-weight: bold;
+    src: url('font/Anodina-Bold.otf');
+}
+@font-face {
+    font-family: "Anodina";
+    font-weight: bolder;
+    src: url('font/Anodina-ExtraBold.otf');
+}
+
+
 body {
     background-color: white;
     overflow-x:hidden;
