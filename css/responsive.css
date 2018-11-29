@@ -26,7 +26,7 @@
 	.sidebar a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 40px;
 		color: #818181;
 		display: block;
 		transition: 0.3s;
@@ -37,15 +37,18 @@
 	    color: #f1f1f1;
 	}
 
-	/* Position and style the close button (top right corner) */
-	.sidebar .closebtn {
-	    position: absolute;
-	    top: 0;
-	    left: 25px;
-	    font-size: 36px;
-	    margin-left: 50px;
+	.navigation .img_navi img{
+		width: 10%;
+		height: auto;
 	}
 
+	.header .hi {
+		font-size: 50pt;
+	}
+
+	.header .tags {
+		font-size: 30pt;
+	}
 
 	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 	#main {
@@ -55,4 +58,44 @@
 	.openbtn{
 		transition: opacity .5s;
 	}
+
+	/* */
+
+	.header {
+		text-align: center;
+	}
+
+	.header .char{
+    	float: unset;
+   		height: 400px;
+	}
+
+	.header .about_intro .about_header {
+    	font-size: 40pt;
+	}
+
+	.header .about_intro {
+    	position: relative;
+    	margin: auto;
+    	padding-left: 0px;
+   		line-height: 1.8em;
+   		font-size: 30pt;
+	}
+	
+
+	.header .about_intro .goblue{
+    	font-size: 35pt;
+	}
+
+	.header .small_icon {
+    	height: 40px;
+    	width: auto;
+	}
+
+	.header .icon {
+	    height: 50px;
+	    width: auto;
+	    padding-left: 10px;
+	}
+
 }
