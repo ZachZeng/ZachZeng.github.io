@@ -1,6 +1,17 @@
+html {
+    height: 100%;
+    width: 100vw;
+}
+
+
 body {
-    background-color: white;
+    background-image: linear-gradient(-45deg, #FC466B, #3F5EFB);
     margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
     font-family: "Anodina";
 }
 
@@ -20,6 +31,7 @@ body {
     position: relative;
     padding: 30px;
     font-weight: lighter;
+    background-color: white;
 }
 
 .navigation ul {
@@ -63,6 +75,7 @@ body {
     padding-top: 60px;
     height: 250px;
     text-align: center;
+    background-color: white;
 }
 
 .header .hi {
@@ -79,26 +92,26 @@ body {
     left: 0;
     right: 0;
     top: -1px;
-    height: 100%;
+    height: 130px;
     margin: auto;
-    background-image: linear-gradient(-45deg, #FC466B, #3F5EFB);
+    background-color: rgba(0,0,0,0);
 }
 .waveWrapperInner {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    height: 7%;
+    height: 150px;
 }
 .bgTop {
-    z-index: 15;
+    z-index: 0;
     opacity: 0.5;
 }
 .bgMiddle {
-    z-index: 10;
+    z-index: 0;
     opacity: 0.75;
 }
 .bgBottom {
-    z-index: 5;
+    z-index: 0;
 }
 .wave {
     position: absolute;
@@ -106,7 +119,6 @@ body {
     width: 200%;
     height: 100%;
     background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
     transform-origin: center bottom;
 }
 .waveTop {
@@ -129,20 +141,21 @@ body {
 }
 
 .flex-container {
-  padding: 50px;
-  list-style: none;
-  width: 85%;
-  height: 40%;
-  margin:auto;
-  margin-top: 200px;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
+    background-color: rgba(0,0,0,0);
+    padding: 50px;
+    list-style: none;
+    width: 85%;
+    height: 1000px;
+    margin:auto;
+    margin-top: 50px;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
 }
 
 .wrap    { 
@@ -160,10 +173,10 @@ body {
   width: 700px;
   height: 350px;
   margin: 30px;
-  
   line-height: 100px;
   color: white;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
 }
