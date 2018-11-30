@@ -5,6 +5,7 @@ html {
 
 .container {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     height: 100%;
     background-attachment: fixed;
     font-family: "Anodina_light";
+    position:fixed;
 }
 
 @keyframes move_wave {
