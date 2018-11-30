@@ -61,20 +61,20 @@
 
 	/* */
 
-	.header {
+	#about_head {
 		text-align: center;
 	}
 
-	.header .char{
+	#about_head .char{
     	float: unset;
    		height: 400px;
 	}
 
-	.header .about_intro .about_header {
+	#about_head .about_intro .about_header {
     	font-size: 40pt;
 	}
 
-	.header .about_intro {
+	#about_head .about_intro {
     	position: relative;
     	margin: auto;
     	padding-left: 0px;
@@ -83,16 +83,16 @@
 	}
 	
 
-	.header .about_intro .goblue{
+	#about_head .about_intro .goblue{
     	font-size: 35pt;
 	}
 
-	.header .small_icon {
+	#about_head .small_icon {
     	height: 40px;
     	width: auto;
 	}
 
-	.header .icon {
+	#about_head .icon {
 	    height: 50px;
 	    width: auto;
 	    padding-left: 10px;
