@@ -3,34 +3,26 @@ html {
     width: 100vw;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-
-}
 
 body {
     background-color: white;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
     font-family: "Anodina_light";
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
-
-
 
 
 
 .header {
     margin-top: 50px;
     margin-left: 0px;
-    height: 600px;
 }
 
 .intro_container {
     width: 800px;
-    height: 400px;
+    height: max-content;
     margin: auto;
 }
 
