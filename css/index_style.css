@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     font-family: "Anodina_light";
     position:absolute;
+    overflow-x: hidden;
 }
 
 @keyframes move_wave {
@@ -38,7 +39,7 @@ body {
     height: 250px;
     text-align: center;
     background-color: white;
-    font-family: "Anodina_regular";
+    font-family: "Anodina_light";
 }
 
 .header .hi {
