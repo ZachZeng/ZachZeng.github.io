@@ -38,18 +38,6 @@
 	    color: #f1f1f1;
 	}
 
-	.navigation .img_navi img{
-		width: 10%;
-		height: auto;
-	}
-
-	.header .hi {
-		font-size: 50pt;
-	}
-
-	.header .tags {
-		font-size: 30pt;
-	}
 
 	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 	#main {
