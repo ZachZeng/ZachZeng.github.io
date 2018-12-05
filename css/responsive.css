@@ -34,17 +34,17 @@
 	}
 
 	.waveTop {
-	    background-size: 50% 20px;
+	    background-size: 50% 25px;
 	}
 	.waveMiddle {
-	    background-size: 50% 30px;
+	    background-size: 50% 27px;
 	}
 	.waveBottom {
-	    background-size: 50% 20px;
+	    background-size: 50% 25px;
 	}
 
 	.waveWrapper {
-	    height: 30px;
+	    height: 40px;
 	}
 
 	.flex-container {
@@ -83,8 +83,10 @@
 		width: 100%;
 	}
 
+
 	.header .about_intro {
-		padding-left: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 }
