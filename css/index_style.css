@@ -3,6 +3,9 @@ html {
     width: 100vw;
 }
 
+.container {
+    overflow-x: hidden; 
+}
 
 body {
     background-image: linear-gradient(-45deg, #FC466B, #3F5EFB);
@@ -14,7 +17,6 @@ body {
     background-attachment: fixed;
     font-family: "Anodina_light";
     position:absolute;
-    overflow-x: hidden; 
 }
 
 @keyframes move_wave {
@@ -60,7 +62,7 @@ body {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    height: 150px;
+    height: 150px;  
 }
 .bgTop {
     z-index: 0;
@@ -81,6 +83,7 @@ body {
     background-repeat: repeat no-repeat;
     transform-origin: center bottom;
 }
+
 .waveTop {
     background-size: 50% 100px;
 }

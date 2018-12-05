@@ -23,7 +23,7 @@
 
 .openbtn {
 	position: fixed;
-	top: 3%;
+	top: 4%;
 	z-index: 2;
 	border:none;
 	cursor: pointer;
@@ -41,7 +41,7 @@
 }
 
 .closebtn img{
-	width: 40px;
+	width: 30px;
 	height: auto;
 	padding-left: 0px;
 }

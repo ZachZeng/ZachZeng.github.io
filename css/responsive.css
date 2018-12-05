@@ -11,7 +11,7 @@
     	left: 0;
     	background-color: #111; /* Black*/
     	overflow-x: hidden; /* Disable horizontal scroll */
-    	padding-top: 60px; /* Place content 60px from the top */
+    	padding-top: 5%; /* Place content 60px from the top */
     	transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 	}
 
@@ -27,10 +27,29 @@
 	.sidebar a {
 		padding: 8px 8px 8px 32px;
 		text-decoration: none;
-		font-size: 40px;
+		font-size: 20px;
 		color: #818181;
 		display: block;
 		transition: 0.3s;
+	}
+
+	.waveTop {
+	    background-size: 50% 20px;
+	}
+	.waveMiddle {
+	    background-size: 50% 30px;
+	}
+	.waveBottom {
+	    background-size: 50% 20px;
+	}
+
+	.waveWrapper {
+	    height: 30px;
+	}
+
+	.flex-container {
+	    margin-top: 20px;
+	    margin-left: -20px;
 	}
 
 	/* When you mouse over the navigation links, change their color */
@@ -60,32 +79,12 @@
    		height: 400px;
 	}
 
-	#about_head .about_intro .about_header {
-    	font-size: 40pt;
+	.intro_container {
+		width: 100%;
 	}
 
-	#about_head .about_intro {
-    	position: relative;
-    	margin: auto;
-    	padding-left: 0px;
-   		line-height: 1.8em;
-   		font-size: 30pt;
-	}
-	
-
-	#about_head .about_intro .goblue{
-    	font-size: 35pt;
-	}
-
-	#about_head .small_icon {
-    	height: 40px;
-    	width: auto;
-	}
-
-	#about_head .icon {
-	    height: 50px;
-	    width: auto;
-	    padding-left: 10px;
+	.header .about_intro {
+		padding-left: 0px;
 	}
 
 }
