@@ -165,6 +165,7 @@ body {
     background-image: url("../img/cover/501.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
+    background-position: center;
     padding: 0;
     border: 0;
     cursor: pointer;
@@ -175,7 +176,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20pt;
+    font-size: 10pt;
     z-index: 10;
     opacity: 0;
     transition: all 0.8s ease;     
