@@ -1,0 +1,265 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    font-family: "Arial";
+    overflow-x: hidden;   
+    background-color: #E8EEF7;
+    line-height: 23px;
+}
+
+
+.navi {
+	width: 100vw;
+	height: 30px;
+	background-color: rgba(255,255,255,0);
+	padding: 50px;
+	position: fixed;
+}
+
+.navi img {
+	height: 100%;
+
+}
+
+.cover {
+	background-image: url("../img/501/background.jpg");
+	background-color: #E8EEF7;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100% auto;
+	height: 500px;
+}
+
+.cover hr {
+	content: '';
+	bottom: 0;
+	width: 100px;
+	height: 4px;
+	background-color: #1C75BA;
+	text-align: left;
+	margin-left: 0;
+	border: 0;
+	margin-bottom: 27.667px;
+}
+
+
+.cover .info {
+	padding-top: 8%;
+	text-align: center;
+	padding-left: 22%;
+}
+
+.cover .info .text {
+	text-align: left;
+}
+
+.cover .info .text h1 {
+	font-size: 22pt;
+}
+
+.cover .info .text i {
+	font-size: 12pt;
+}
+
+.content_container {
+	padding-left: 22%;
+	padding-right: 22%;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	margin: auto;
+	border: 0;
+	margin-top: -70px;
+}
+
+.intro {
+	height: max-content;
+	background-color: #fff;
+}
+
+.intro .tags .tag {
+	display: inline-block;
+	width: 200px;
+	vertical-align:top;
+	margin-right: 60px;
+}
+
+h4 {
+	font-size: 16pt;
+}
+
+.body_text {
+	font-size: 12pt;
+	color: #777777;
+}
+
+.intro hr {
+	content: '';
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: #DEDEDE;
+	border: 0;
+}
+
+h2 {
+	font-size: 14pt;
+	color: #1C75BA;
+}
+
+.problem i {
+	font-size: 13pt;
+
+}
+
+.process {
+	margin-top: 60px;
+}
+
+.process .processes {
+	padding-top: 50px;
+}
+
+.process .proc {
+	display: inline-block;
+	width: 200px;
+	vertical-align:top;
+	text-align: center;
+	margin-right: 39px;
+}
+
+.process .process_img {
+	width: 60px;
+	height: auto;
+}
+
+.process .arrow {
+	width: 30px;
+	height: auto;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 20pt;
+}
+
+.interview {
+	height: max-content;
+	background-color: #F2F2F2;
+	margin-top: 0px;
+	padding-top: 60px;
+}
+
+.interview .dialog {
+	margin-top: 40px;
+	height: 100px;
+	position: relative;
+}
+
+.interview .dialog img {
+	float: left;
+	height: 100%;
+	width: auto;
+	margin-right: 20px;
+}
+
+.interview .dialog .body_text {
+	position: absolute;
+	top: 20px;
+}
+
+.interview .dialog .bottom_text {
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+}
+
+.qualitative {
+	height: max-content;
+	background-color: #fff;
+	margin-top: 0px;
+	padding-top: 60px;
+}
+
+#material {   
+    width: 100%;
+    margin-top:40px;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+#material a {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+#material img {
+	height: 250px;
+	width: auto;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+#key_findings {
+	margin-top: 60px;
+}
+
+#findings {
+	padding-top: 5px;
+}
+
+#findings .findings {
+	width: 100%;
+}
+
+#key_findings img{
+	display: inline-block;
+	width: 60px;
+	height: auto;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+#findings .finding .finding_info{
+	display: inline-block;
+	vertical-align: middle;
+	width: 90%;
+}
+
+#findings .finding .info_head{
+	color: black;
+	font-weight: bold;
+}
+
+
+#key_findings #LSA_work {
+	height: 400px;
+	width: auto;
+	margin-top: 70px;
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+}
+
+.solution {
+	height: max-content;
+	background-color: #F2F2F2;
+	margin-top: 0px;
+	padding-top: 60px;
+}
+
+.solution img {
+	width: 200px;
+	height: auto;
+}
