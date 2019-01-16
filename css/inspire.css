@@ -18,6 +18,12 @@ body {
     overflow-x: hidden;
 }
 
+.header {
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+
 .flex-container {
     background-color: rgba(0,0,0,0);
     padding: 50px;
@@ -35,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 .wrap    { 
   -webkit-flex-wrap: wrap;
