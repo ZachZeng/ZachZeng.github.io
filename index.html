@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GO BLUE</title>
-	<link rel="stylesheet" href="css/under_c.css">
+	<title>Zachary Zeng</title>
+	<link rel="stylesheet" href="css/index_style.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="icon" href="img/Icon_small.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="container">
+	<div class="container" id="main">
+		<div class="navigation">
+	  		<a class="left_navi" href="index.html" style="margin-left: 100px">WORK</a>
+	  		<a class="left_navi">INSPIRE</a>
+	  		<a class="img_navi"  href="index.html"><img src="img/Icon.png"></a>
+	  		<a class="right_navi" href="Resume.pdf" target="_blank" style="margin-right: 100px">RESUME</a>
+	  		<a class="right_navi" href="about.html">ABOUT</a>
+		</div>
 		<div class="header">
-			<div class="head_img">
-				<img src="img/Icon.png">
+			<div id="mySidebar" class="sidebar">
+	  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/cross.png"></a>
+	  			<a href="index.html">WORK</a>
+	 			<a href="inspire.html">INSPIRE</a>
+	  			<a href="about.html">ABOUT</a>
+	  			<a href="Resume.pdf" target="_blank">RESUME</a>
 			</div>
-			<div class="head_text">
-				<p class="intro">Hi! I'm Zachary Yizhou Zeng</p>
-				<p>This page is currently in progress. Feel free to <a href="mailto:zachsheeran333@gmail.com" class="contact"> contact me</a>.</p> 
-			</div>
+			<button class="openbtn" onclick="openNav()"><img src="img/menu-button.png"></button> 
+			<p class="hi"> Hi, I am <b> Zachary </b> Yizhou Zeng! </p>
+			<p class="tags">UX designer, Front-end Developer & Love of graphic design and cutting-edge technology</p>
 		</div>
-		<div class="gif">
-			<img src="img/DNA-Loading.gif">
+		<div class="waveWrapper waveAnimation">
+			<div class="mwaveWrapperInner bgTop">
+	    		<div class="wave waveTop" style="background-image: url('img/wave1.png')"></div>
+	  		</div>
+	  		<div class="waveWrapperInner bgMiddle">
+	    		<div class="wave waveMiddle" style="background-image: url('img/wave2.png')"></div>
+	  		</div>
+	  		<div class="waveWrapperInner bgBottom">
+	    		<div class="wave waveBottom" style="background-image: url('img/wave3.png')"></div>
+	  		</div>
 		</div>
-		<div class="resume_btn">
-			<a href="Resume.pdf" target="_blank">
-			RESUME
-			</a>
+		<ul class="flex-container wrap">
+	  			<li class="flex-item i1"><a href="582 projects.html"><div class="text_container"><span class="text"><h1>Nest</h1><p> A mobile APP to help users to find the best fit apartments and best fit roommates.</p></span></div></a></li>
+	  			<li class="flex-item i2"><a href="501 projects.html"><div class="text_container"><span class="text"><h1>Improvement of Course Management System</h1></span></div></a></li>
+	  			<li class="flex-item i3"><a href="#"><div class="text_container"><span class="text"><h1>Coming Soon...</h1></span></div></a></li>
+		</ul>
+
+		<div id="back2top">
+			<a href="#top"><img src="img/arrow-up.png"></a>
 		</div>
 	</div>
+	<footer>
+		
+	</footer>
 	<script type="text/javascript" src="js/jquery.js"></script>
-
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
 </body>
 </html>
