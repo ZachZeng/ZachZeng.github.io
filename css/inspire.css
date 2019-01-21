@@ -55,7 +55,7 @@ body {
 .flex-item {
   background: tomato;
   padding: 5px;
-  height: 450px;
+  height: 300px;
   width: max-content;
   margin: 30px;
   line-height: 20px;
