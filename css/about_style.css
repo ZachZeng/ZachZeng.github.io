@@ -33,7 +33,8 @@ body {
 
 .header .char{
     float: left;
-    height: 400px;
+    height: 430px;
+    vertical-align: middle;
 }
 
 .header .small_icon {
@@ -48,8 +49,10 @@ body {
 }
 
 .header .about_intro {
+    font-size: 14pt;
     padding-left:300px;
     line-height: 1.8em;
+    vertical-align: middle;
 }
 
 .header .about_intro .about_header {
