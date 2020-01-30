@@ -1,0 +1,89 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	background: #111;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    outline: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar {
+    padding: 5rem;
+    position: fixed;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.sidebar .btn {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 1rem;
+    max-width: 10rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.sidebar .btn .left-arrow {
+    position: absolute;
+    left: -1em;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.sidebar .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .btn:hover .left-arrow {
+    left:1em;
+}
+
+.sidebar .siderbar-content {
+    margin-top: 3em;
+}
+
+.sidebar .sidebar-desc {
+    margin-bottom: 3em;
+}
+
+.sidebar-desc p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 5rem;
+    margin-left: 30%;
+    margin-right: 5%;
+}
+
+.content h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    line-height: 4rem;
+    margin-bottom: 0.5em;
+}
+
+.gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.gallery img{
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
