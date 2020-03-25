@@ -16,7 +16,7 @@ a {
     padding: 5rem;
     position: fixed;
     width: 20%;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .sidebar .btn {
@@ -62,7 +62,7 @@ a {
 
 .content {
     padding: 5rem;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-right: 5%;
 }
 

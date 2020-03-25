@@ -10,28 +10,70 @@ body {
     line-height: 23px;
 }
 
-
-.navi {
-	width: 100vw;
-	height: 30px;
-	background-color: rgba(255,255,255,0);
-	padding: 50px;
-	position: fixed;
+a {
+    outline: none;
+	color: #000;
+	text-decoration: none;
 }
 
-.navi img {
-	height: 100%;
-
+.sidebar {
+    padding: 5rem;
+    position: fixed;
+    width: 20%;
+    margin-left: 2%;
 }
+
+.sidebar .btn {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 1rem;
+    max-width: 10rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.sidebar .btn .left-arrow {
+    position: absolute;
+    left: -1em;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.sidebar .btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .btn:hover .left-arrow {
+    left:1em;
+}
+
+.sidebar .siderbar-content {
+    margin-top: 3em;
+}
+
+.sidebar .sidebar-desc {
+    margin-bottom: 3em;
+}
+
+.sidebar-desc p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 5rem;
+    margin-left: 25%;
+    margin-right: 5%;
+}
+
 
 .cover {
-	background-image: url("../img/582/background.jpg");
 	background-color: #E8EEEF;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 100% auto;
-	height: 500px;
+	height: 20rem;
 }
 
 .cover hr {
@@ -43,30 +85,38 @@ body {
 	text-align: left;
 	margin-left: 0;
 	border: 0;
-	margin-bottom: 27.667px;
+	margin-bottom: 1rem;
 }
 
 
-.cover .info {
-	padding-top: 8%;
-	text-align: center;
-	padding-left: 22%;
-}
 
 .cover .info .text {
 	text-align: left;
+	float: left;
+	width: 50%;
 }
 
 .cover .info .text h1 {
-	font-size: 22pt;
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    line-height: 4rem;
+    margin-bottom: 0.5em;
 }
 
 .cover .info .text i {
-	font-size: 12pt;
+	font-size: 1rem;
+}
+
+.cover .info img {
+	float: right;
+	width: 10rem;
+	height: 10rem;
+
 }
 
 .content_container {
-	padding-left: 22%;
+	padding-left: 10%;
 	padding-right: 22%;
 	padding-top: 50px;
 	padding-bottom: 100px;
@@ -147,7 +197,8 @@ h2 {
 }
 
 h3 {
-	font-size: 20pt;
+	font-size: 2rem;
+	line-height: 2rem;
 }
 
 .design_process {
@@ -223,10 +274,9 @@ h3 {
 
 
 .explore #personas img {
-	width: 45%;
+	width: 100%;
 	height: auto;
-	margin-right: 50px;
-	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+	margin-bottom: 1rem;
 }
 
 .design_rationale {
@@ -248,7 +298,7 @@ h3 {
 }
 
 .design_rationale #QOC_img img {
-	width: 70%;
+	width: 100%;
 	height: auto;
 	margin-top: 100px;
 }
@@ -266,8 +316,9 @@ h3 {
 }
 
 .prototyping .video {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 	text-align: center;
-	padding: 70px;
 }
 
 .prototyping #digital_img {
@@ -292,6 +343,12 @@ h3 {
 	margin-bottom: 10px;
 }
 
+h5 {
+	font-size: 15pt;
+	font-weight: 100;
+	text-align: center;
+}
+
 .final #style {
 	margin-top: 60px;
 }
@@ -300,7 +357,7 @@ h3 {
 	text-align: center;
 	display: inline-block;
 	width: 15%;
-	margin-right: 17%;
+	margin-right: 10%;
 	vertical-align: top;
 }
 
@@ -309,12 +366,12 @@ h3 {
 }
 
 .final #walkthrough .UI_container {
-	margin-top: 150px;
+	margin-top: 0;
 	width: 100%;
 }
 
 .final #walkthrough .UI_container .UI_info{
-	width: 30%;
+	width: 100%;
 	vertical-align: middle;	
 	display: inline-block;
 }
@@ -322,8 +379,8 @@ h3 {
 .final #walkthrough .UI_container .UI_img {
 	display: inline-block;
 	vertical-align: middle;
-	width: 60%;
-	margin-left: 8%;
+	width: 100%;
+	margin-left: 10%;
 }
 
 .final #walkthrough .UI_container .UI_img img {
